@@ -1,0 +1,19 @@
+{
+  "run_id": "task_007-run-001",
+  "task": "Calculate the total on-call stipend: $45 per day for 12 days plus a $200 incident bonus.",
+  "steps": [
+    {
+      "step": 1,
+      "thought": "One calculation covers it: daily rate times days plus the bonus.",
+      "action": {
+        "tool": "calculator",
+        "args": {
+          "expression": "45*12+200"
+        }
+      },
+      "observation": "Result: 740"
+    }
+  ],
+  "final_answer": "Total on-call stipend: $740 ($45 x 12 days + $200 incident bonus).",
+  "status": "success"
+}
