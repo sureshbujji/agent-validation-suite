@@ -1,0 +1,30 @@
+{
+  "run_id": "task_005-run-001",
+  "task": "Look up the on-call rotation schedule, then calculate the MTTR in minutes from an incident start of 14:05 and resolve of 14:47.",
+  "steps": [
+    {
+      "step": 1,
+      "thought": "Look up who is on call, then work out the MTTR.",
+      "action": {
+        "tool": "web_search",
+        "args": {
+          "query": "on-call rotation schedule primary"
+        }
+      },
+      "observation": "Primary on-call: QA rotation, S. Itha this week."
+    },
+    {
+      "step": 2,
+      "thought": "MTTR is resolve minus start, in minutes.",
+      "action": {
+        "tool": "calculator",
+        "args": {
+          "expression": "(14*60+47)-(14*60+5)"
+        }
+      },
+      "observation": "Result: 42"
+    }
+  ],
+  "final_answer": "MTTR for the incident was 42 minutes (started 14:05, resolved 14:47).",
+  "status": "success"
+}
