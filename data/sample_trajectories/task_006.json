@@ -1,0 +1,31 @@
+{
+  "run_id": "task_006-run-001",
+  "task": "Recall the stored API key alias from memory, then search the docs for its rotation policy.",
+  "steps": [
+    {
+      "step": 1,
+      "thought": "Recall the stored API key alias first.",
+      "action": {
+        "tool": "memory",
+        "args": {
+          "op": "read",
+          "key": "api_key_alias"
+        }
+      },
+      "observation": "Alias found: 'billing-svc-key'."
+    },
+    {
+      "step": 2,
+      "thought": "Search the docs for that alias's rotation policy.",
+      "action": {
+        "tool": "web_search",
+        "args": {
+          "query": "billing-svc-key rotation policy docs"
+        }
+      },
+      "observation": "Docs: keys rotate every 90 days."
+    }
+  ],
+  "final_answer": "The stored alias is billing-svc-key; per the docs its rotation policy is every 90 days.",
+  "status": "success"
+}
