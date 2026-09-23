@@ -1,0 +1,491 @@
+{
+  "generated_at": "2026-09-23T03:58:00.511373+00:00",
+  "config": {
+    "trajectories_dir": "/home/hatch/workspace/github-projects/agent-validation-suite/data/sample_trajectories",
+    "tasks_file": "/home/hatch/workspace/github-projects/agent-validation-suite/data/agent_tasks.jsonl",
+    "min_pass_rate": 0.8,
+    "fail_on_critical": true
+  },
+  "summary": {
+    "total": 15,
+    "passed_count": 13,
+    "pass_rate": 0.8667,
+    "mean_score": 4.5333,
+    "per_validator_failures": {
+      "tool_calls": 1,
+      "plan_adherence": 1,
+      "max_steps": 2,
+      "loop_detection": 2
+    },
+    "critical_count": 2
+  },
+  "gate": {
+    "passed": false,
+    "reasons": [
+      "2 critical trajectories (loop_detected status or score 1)"
+    ]
+  },
+  "results": [
+    {
+      "run_id": "task_001-run-001",
+      "task_id": "task_001",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: file_reader, memory."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 10), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_001.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_002-run-001",
+      "task_id": "task_002",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: web_search, calculator."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 8), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_002.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_003-run-001",
+      "task_id": "task_003",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: file_reader, memory."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 8), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_003.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_004-run-001",
+      "task_id": "task_004",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: file_reader, calculator."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 8), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_004.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_005-run-001",
+      "task_id": "task_005",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: web_search, calculator."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 8), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_005.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_006-run-001",
+      "task_id": "task_006",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: memory, web_search."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 8), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_006.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_007-run-001",
+      "task_id": "task_007",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 1 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: calculator."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 1 steps (max 6), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_007.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_008-run-001",
+      "task_id": "task_008",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 3 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: file_reader, memory."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 3 steps (max 10), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_008.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_009-run-001",
+      "task_id": "task_009",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: web_search, memory."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 8), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_009.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_010-run-001",
+      "task_id": "task_010",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: file_reader, calculator."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 8), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_010.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_011-run-001",
+      "task_id": "task_011",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 4 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: web_search, file_reader, calculator, memory."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 4 steps (max 12), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_011.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_012-run-001",
+      "task_id": "task_012",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 1 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: memory."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 1 steps (max 6), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_012.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_013-run-001",
+      "task_id": "task_013",
+      "score": 5,
+      "passed": true,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 2 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: calculator."
+        },
+        "max_steps": {
+          "passed": true,
+          "details": "Within budget: 2 steps (max 6), status 'success'."
+        },
+        "loop_detection": {
+          "passed": true,
+          "details": "No repeated-action loop (no 3+ identical consecutive calls)."
+        }
+      },
+      "failed_validators": [],
+      "missing_must_contain": [],
+      "status": "success",
+      "critical": false,
+      "file": "task_013.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_014-run-001",
+      "task_id": "task_014",
+      "score": 1,
+      "passed": false,
+      "validator_results": {
+        "tool_calls": {
+          "passed": false,
+          "details": "Invalid tool calls: Step 1: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 2: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 3: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 4: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 5: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 6: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 7: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 8: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 9: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 10: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 11: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory); Step 12: unknown tool 'scraper' (known tools: web_search, calculator, file_reader, memory)"
+        },
+        "plan_adherence": {
+          "passed": false,
+          "details": "Plan not followed: expected tools never used: web_search (used: scraper)"
+        },
+        "max_steps": {
+          "passed": false,
+          "details": "Step budget / status check failed: 12 steps exceeds max_steps=10; final status is 'failed', expected 'success'"
+        },
+        "loop_detection": {
+          "passed": false,
+          "details": "Loop detected: ('scraper', {\"url\": \"https://competitor.example/pricing\"}) repeated 8x consecutively (steps 1-8)."
+        }
+      },
+      "failed_validators": [
+        "tool_calls",
+        "plan_adherence",
+        "max_steps",
+        "loop_detection"
+      ],
+      "missing_must_contain": [],
+      "status": "failed",
+      "critical": true,
+      "file": "task_014.json",
+      "unknown_task": false
+    },
+    {
+      "run_id": "task_015-run-001",
+      "task_id": "task_015",
+      "score": 2,
+      "passed": false,
+      "validator_results": {
+        "tool_calls": {
+          "passed": true,
+          "details": "All 4 tool calls valid against known tools."
+        },
+        "plan_adherence": {
+          "passed": true,
+          "details": "All expected tools used: file_reader."
+        },
+        "max_steps": {
+          "passed": false,
+          "details": "Step budget / status check failed: final status is 'loop_detected', expected 'success'"
+        },
+        "loop_detection": {
+          "passed": false,
+          "details": "Loop detected: ('file_reader', {\"path\": \"deploy_status.txt\"}) repeated 4x consecutively (steps 1-4)."
+        }
+      },
+      "failed_validators": [
+        "max_steps",
+        "loop_detection"
+      ],
+      "missing_must_contain": [
+        "deployed",
+        "done"
+      ],
+      "status": "loop_detected",
+      "critical": true,
+      "file": "task_015.json",
+      "unknown_task": false
+    }
+  ]
+}
