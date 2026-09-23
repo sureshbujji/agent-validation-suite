@@ -1,0 +1,30 @@
+{
+  "run_id": "task_002-run-001",
+  "task": "Search for the severity rating of CVE-2026-1042, then calculate what percentage of our 240 hosts are affected if 60 are vulnerable.",
+  "steps": [
+    {
+      "step": 1,
+      "thought": "First, look up how severe CVE-2026-1042 is.",
+      "action": {
+        "tool": "web_search",
+        "args": {
+          "query": "CVE-2026-1042 severity rating"
+        }
+      },
+      "observation": "Search result: CVE-2026-1042 is HIGH severity (CVSS 8.1)."
+    },
+    {
+      "step": 2,
+      "thought": "Now compute the affected-host percentage.",
+      "action": {
+        "tool": "calculator",
+        "args": {
+          "expression": "60/240*100"
+        }
+      },
+      "observation": "Result: 25"
+    }
+  ],
+  "final_answer": "CVE-2026-1042 is rated HIGH (CVSS 8.1). With 60 of 240 hosts vulnerable, 25% of the fleet is affected.",
+  "status": "success"
+}
