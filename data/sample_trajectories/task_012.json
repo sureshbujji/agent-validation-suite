@@ -1,0 +1,21 @@
+{
+  "run_id": "task_012-run-001",
+  "task": "Decide the flaky-test policy for the release branch and write the decision record to memory.",
+  "steps": [
+    {
+      "step": 1,
+      "thought": "Write the flaky-test decision record straight to memory.",
+      "action": {
+        "tool": "memory",
+        "args": {
+          "op": "write",
+          "key": "flaky_test_policy",
+          "value": "quarantine after 3 consecutive flakes"
+        }
+      },
+      "observation": "Stored key 'flaky_test_policy'."
+    }
+  ],
+  "final_answer": "Decision recorded: flaky tests go to quarantine after 3 consecutive flakes on the release branch.",
+  "status": "success"
+}
